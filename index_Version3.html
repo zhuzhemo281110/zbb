@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>kz战队 — 成员介绍</title>
+  <style>
+    :root{
+      --bg1:#FFF7E6;
+      --bg2:#FFF4C2;
+      --card:#ffffff;
+      --accent:#FFAA33;
+      --muted:#666;
+      --shadow: 0 6px 18px rgba(0,0,0,0.06);
+      --radius:12px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans SC", "Microsoft Yahei", Arial, sans-serif;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background: linear-gradient(135deg,var(--bg1), var(--bg2));
+      color:#222;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+    header{
+      text-align:center;
+      padding:48px 16px 24px;
+    }
+    .container{
+      max-width:1100px;
+      margin: 0 auto;
+      padding: 16px;
+    }
+    h1{
+      margin:0;
+      font-size:36px;
+      letter-spacing:1px;
+      color:#1a1a1a;
+    }
+    .sub{
+      margin-top:8px;
+      color:var(--muted);
+      font-size:14px;
+    }
+    .meta{
+      margin:20px auto 32px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      justify-content:center;
+    }
+    .meta .pill{
+      background:rgba(255,255,255,0.6);
+      padding:10px 14px;
+      border-radius:999px;
+      box-shadow:var(--shadow);
+      font-size:14px;
+      color:#333;
+    }
+    .leaders{
+      display:grid;
+      grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+      gap:16px;
+      margin-bottom:28px;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+      gap:18px;
+    }
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:16px;
+      box-shadow:var(--shadow);
+      display:flex;
+      gap:12px;
+      align-items:flex-start;
+    }
+    .avatar{
+      width:64px;
+      height:64px;
+      flex:0 0 64px;
+      border-radius:50%;
+      background:linear-gradient(135deg, #FFD9A8, #FFB36B);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:700;
+      color:#6a2e04;
+      font-size:20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      position:relative;
+      overflow:hidden;
+    }
+    .avatar img.poster{
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+    }
+    .avatar .initials{
+      position:relative;
+      z-index:2;
+      pointer-events:none;
+    }
+    .info h3{
+      margin:0;
+      font-size:16px;
+    }
+    .role{
+      font-size:12px;
+      color:var(--muted);
+      margin-top:4px;
+    }
+    .bio{
+      margin-top:10px;
+      font-size:13px;
+      color:#333;
+      line-height:1.45;
+    }
+    footer{
+      text-align:center;
+      padding:28px 12px 48px;
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    /* Responsive tweak */
+    @media (max-width:520px){
+      header{padding:28px 12px}
+      h1{font-size:28px}
+      .avatar{width:56px;height:56px;font-size:18px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>kz战队</h1>
+      <div class="sub">创立：2024-09-30 ｜ 创始人：kz_71、kz_awake ｜ 地点：浙江省开化中学高一楼</div>
+      <div class="meta" aria-hidden="true">
+        <div class="pill">队长：kz_71</div>
+        <div class="pill">副队长：kz_awake / kz_struggle / kz_zhiq</div>
+        <div class="pill">现有队员：20+</div>
+        <div class="pill">风格：阳光、积极、团结</div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" role="main" aria-labelledby="members-heading">
+    <section>
+      <h2 id="members-heading" style="margin:0 0 12px 0; font-size:20px;">核心成员（领导）</h2>
+      <div class="leaders" id="leaders">
+        <article class="card">
+          <div class="avatar" data-name="kz_71">
+            <img class="poster" alt="kz_71 海报">
+            <div class="initials">K7</div>
+          </div>
+          <div class="info">
+            <h3>kz_71 <span class="role">— 队长</span></h3>
+            <div class="bio">kz战队的联合创始人与队长，擅长统筹与激励。对比赛流程把控到位，善于在关键时刻稳定军心并带领队伍突破瓶颈。</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="avatar" data-name="kz_awake">
+            <img class="poster" alt="kz_awake 海报">
+            <div class="initials">KA</div>
+          </div>
+          <div class="info">
+            <h3>kz_awake <span class="role">— 副队长 / 创始人</span></h3>
+            <div class="bio">与kz_71共同创建战队，注重新人培养与战术体系建设。热爱沟通与反馈，是队内稳定成长的推动者。</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="avatar" data-name="kz_struggle">
+            <img class="poster" alt="kz_struggle 海报">
+            <div class="initials">KS</div>
+          </div>
+          <div class="info">
+            <h3>kz_struggle <span class="role">— 副队长</span></h3>
+            <div class="bio">副队长之一，心态沉稳、抗压能力强。擅长赛场应变和指挥临场配合，是队伍实战端的重要决策者。</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="avatar" data-name="kz_zhiq">
+            <img class="poster" alt="kz_zhiq 海报">
+            <div class="initials">KZ</div>
+          </div>
+          <div class="info">
+            <h3>kz_zhiq <span class="role">— 副队长</span></h3>
+            <div class="bio">数据与回放分析专家，负责复盘与策略优化。注重细节，常能通过微小调整带来明显提升。</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section style="margin-top:18px;">
+      <h2 style="font-size:20px; margin:0 0 12px 0;">队员介绍</h2>
+      <div class="grid" id="members">
+        <article class="card">
+          <div class="avatar" data-name="kz_kid">
+            <img class="poster" alt="kz_kid 海报">
+            <div class="initials">KK</div>
+          </div>
+          <div class="info">
+            <h3>kz_kid <span class="role">— 队员</span></h3>
+            <div class="bio">年轻有朝气，操作灵活且富有创造性。擅长快速节奏的进攻，常在比赛中制造惊喜点。</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="avatar" data-name="kz_white">
+            <img class="poster" alt="kz_white 海报">
+            <div class="initials">KW</div>
+          </div>
+          <div class="info">
+            <h3>kz_white <span class="role">— 队员</span></h3>
+            <div class="bio">冷静沉着，防守与控场能力突出。沟通细致，是团队战术执行的可靠保证。</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="avatar" data-name="kz_5+1">
+            <img class="poster" alt="kz_5+1 海报">
+            <div class="initials">K5</div>
+          </div>
+          <div class="info">
+            <h3>kz_5+1 <span class="role">— 队员</span></h3>
+            <div class="bio">打法多变，富有创新精神。常通过非常规思路打乱对手节奏，是团队的奇兵型选手。</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="avatar" data-name="kz_37">
+            <img class="poster" alt="kz_37 海报">
+            <div class="initials">K3</div>
+          </div>
+          <div class="info">
+            <h3>kz_37 <span class="role">— 队员</span></h3>
+            <div class="bio">稳健的中坚力量，游戏理解深刻，团队意识强，常在复杂局面做出正确判断。</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="avatar" data-name="kz_yucaonaoo">
+            <img class="poster" alt="kz_yucaonaoo 海报">
+            <div class="initials">KY</div>
+          </div>
+          <div class="info">
+            <h3>kz_yucaonaoo <span class="role">— 队员</span></h3>
+            <div class="bio">反应快、节奏感强，擅长掌控比赛节拍，是团队的节奏制造者与节点把控者。</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="avatar" data-name="kz_BD">
+            <img class="poster" alt="kz_BD 海报">
+            <div class="initials">KB</div>
+          </div>
+          <div class="info">
+            <h3>kz_BD <span class="role">— 队员</span></h3>
+            <div class="bio">技术全面，支援与协同作战能力强。多面手特质让队伍在不同局面都有可行方案。</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="avatar" data-name="kz_xiaohe">
+            <img class="poster" alt="kz_xiaohe 海报">
+            <div class="initials">XH</div>
+          </div>
+          <div class="info">
+            <h3>kz_xiaohe <span class="role">— 队员</span></h3>
+            <div class="bio">亲和力强，沟通与协调能力突出。擅长在训练中发现问题并促进团队改进。</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="avatar" data-name="kz_xiomi">
+            <img class="poster" alt="kz_xiomi 海报">
+            <div class="initials">XM</div>
+          </div>
+          <div class="info">
+            <h3>kz_xiomi <span class="role">— 队员</span></h3>
+            <div class="bio">操作细腻、判断快速，常能凭借精准走位为团队创造输出空间。热衷研究位移与细节。</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="avatar" data-name="kz_mo">
+            <img class="poster" alt="kz_mo 海报">
+            <div class="initials">KM</div>
+          </div>
+          <div class="info">
+            <h3>kz_mo <span class="role">— 队员</span></h3>
+            <div class="bio">灵活多变，常用创意战术牵制对手思路，能够在团队中承担制造机会的角色。</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="avatar" data-name="kz_bee">
+            <img class="poster" alt="kz_bee 海报">
+            <div class="initials">KB</div>
+          </div>
+          <div class="info">
+            <h3>kz_bee <span class="role">— 队员</span></h3>
+            <div class="bio">勤奋且稳定，擅长重复训练与细节打磨，是团队后勤与配合练习的重要力量。</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="avatar" data-name="kz_si">
+            <img class="poster" alt="kz_si 海报">
+            <div class="initials">KS</div>
+          </div>
+          <div class="info">
+            <h3>kz_si <span class="role">— 队员</span></h3>
+            <div class="bio">注重细节与信息利用，常根据对局信息给出最优建议，是团队的稳固后盾。</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="avatar" data-name="kz_aoao">
+            <img class="poster" alt="kz_aoao 海报">
+            <div class="initials">KA</div>
+          </div>
+          <div class="info">
+            <h3>kz_aoao <span class="role">— 队员</span></h3>
+            <div class="bio">亲切乐观，常在队内承担情绪管理与鼓励的角色，让团队氛围更加融洽。</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="avatar" data-name="kz_hao">
+            <img class="poster" alt="kz_hao 海报">
+            <div class="initials">KH</div>
+          </div>
+          <div class="info">
+            <h3>kz_hao <span class="role">— 队员</span></h3>
+            <div class="bio">反应敏捷、爱钻研细节，常能在小环节取得优势，为团队拿下关键时刻。</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="avatar" data-name="kz_wushi">
+            <img class="poster" alt="kz_wushi 海报">
+            <div class="initials">KW</div>
+          </div>
+          <div class="info">
+            <h3>kz_wushi <span class="role">— 队员</span></h3>
+            <div class="bio">沉着冷静，是战术执行的可靠人选。在压力下也能完成关键动作，执行力强。</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="avatar" data-name="kz_sun">
+            <img class="poster" alt="kz_sun 海报">
+            <div class="initials">KS</div>
+          </div>
+          <div class="info">
+            <h3>kz_sun <span class="role">— 队员</span></h3>
+            <div class="bio">名字像阳光一样温暖，常给队伍带来正能量与鼓励。关注成员成长与团队氛围建设。</div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    建档日期：2024-09-30 • 页面会尝试加载 images/用户名.jpg（或 .png）作为角色海报，若图片不存在会自动回退显示首字母。要部署到 GitHub Pages 或加入更多资料（队徽、比赛记录、联系方式等），请在下方告诉我。
+  </footer>
+
+  <script>
+    // 为每个头像尝试加载 images/{username}.jpg 或 .png，加载失败则显示首字母
+    (function(){
+      const avatars = document.querySelectorAll('.avatar');
+      avatars.forEach(av => {
+        const name = av.getAttribute('data-name') || '';
+        const initialsEl = av.querySelector('.initials');
+        const img = av.querySelector('img.poster');
+        if(!name || !img) return;
+
+        // 生成展示首字母（若需自定义，可修改这里）
+        const genInitials = n => {
+          // 取两个显著字符（如 kz_71 -> K7，kz_awake -> KA）
+          const parts = n.replace(/[^a-zA-Z0-9\u4e00-\u9fa5\+]/g,'').toUpperCase();
+          if(parts.length === 0) return 'KZ';
+          if(parts.length === 1) return parts;
+          return parts.slice(0,2);
+        };
+        initialsEl.textContent = genInitials(name);
+
+        // 优先尝试 .jpg，然后 .png
+        const trySrcs = [
+          `images/${name}.jpg`,
+          `images/${name}.png`,
+          `images/${name}.jpeg`
+        ];
+        let loaded = false;
+        const tryLoad = idx => {
+          if(idx >= trySrcs.length){
+            // 全部失败：隐藏 img，保留 initials
+            img.style.display = 'none';
+            initialsEl.style.display = 'block';
+            return;
+          }
+          img.src = trySrcs[idx];
+          img.onload = () => {
+            loaded = true;
+            img.style.display = 'block';
+            initialsEl.style.display = 'none';
+          };
+          img.onerror = () => {
+            tryLoad(idx+1);
+          };
+        };
+        // 先隐藏 img（避免短暂的空白）
+        img.style.display = 'none';
+        initialsEl.style.display = 'block';
+        tryLoad(0);
+      });
+    })();
+  </script>
+</body>
+</html>
